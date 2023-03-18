@@ -31,7 +31,13 @@ Ultimately, Appium wants to make sure that you have the automation capabilities 
 
 What this means is that if you want to know all the commands that Appium supports, you can't just go looking at the WebDriver Protocol documentation. Because Appium has added a bunch of its own extensions, which would only be found in the Appium documentation. You can think of Appium's protocol like a superset of the WebDriver protocol. And this is in fact how the WebDriver Protocol was defined. The authors knew that other projects might want to extend it with their own commands, so it provides rules for how to do that in a way which is approved by the standard. And that's what the Appium team did.
 
-### More Commands API Example
+### More Command API Examples
+
+| More Command API Examples |  |  |
+| ---- | ---- | ---- |
+| Lock Device | <code>POST /session/{session id}/appium/device/lock</code> | Lock the screen of a mobile device |
+| Unlock Device | <code>POST /session/{session id}/appium/device/unlock</code> | Unlock the screen of a mobile device |
+| Check App Installed | <code>POST /session/{session id}/appium/device/app_installed</code> | Determine whether a particular app is installed on a device |
 
 Let's briefly look at a few examples.
 
